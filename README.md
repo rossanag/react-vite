@@ -93,7 +93,7 @@ I installed [Eslint for Typescript](https://typescript-eslint.io/getting-started
 
 You can install and configure (very basically) eslint by running: ``` npm init @eslint/config ```
 
-This is my final vite.config.ts file:
+This is my final vite.config.ts file after installing eslint:
 
 ```
 
@@ -113,6 +113,8 @@ export default defineConfig({
 
 10- Create the eslint configuration file ``` touch .eslintrc ```. 
 I complemented the configuration by following: [eslint configuration](https://medium.com/alturasoluciones/eslint-basic-configuration-18b2109d98ec)
+
+You can change the configuration running this command: ``` npm init @eslint/config ```
 
 I experienced some erros with the following message:
 >"React must be in scope, disable rules"  
