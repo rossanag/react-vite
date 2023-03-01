@@ -130,6 +130,9 @@ I found [this nice article](https://bobbyhadz.com/blog/react-must-be-in-scope-wh
 I added the eslint script to the package.json file
 ``` "eslint": "eslint --max-warnings=0 src/**/*.ts{,x} --fix" ```
 
+I had to tweak the config file to add ";" after every sentence, just because I like it.
+Within the rules: is the 'semi' attribute
+
 
 ## About the example code
 
@@ -146,4 +149,6 @@ I use Ubuntu, but it is the same for other OS, Linux uses the inotify package to
 Here is the link to the [article that leads to the solution](https://bobbyhadz.com/blog/system-limit-for-number-of-file-watchers-reached) according to your OS 
 
 
+### Final notes
 
+You can watch the different config files to see the options I choose. For shortening purposes I didn't specify all of them.
