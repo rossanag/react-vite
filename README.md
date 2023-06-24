@@ -28,11 +28,11 @@ Here the [explanation why Vite is faster than CRA](https://dev.to/nilanth/use-vi
 
 ## Step by Step installations
 
-1- Create a folder for your project and change to it
-2- Install Vite ``` npm install vite @vitejs/plugin-react --save-dev ```
-3- Create a React with Typescript ``` npm create vite@latest my-vue-app -- --template react-ts ```
-4- Create package.json ``` npm install ``` to install the plugins mentioned in the package.json file
-5- I wanted to open the browser instantaneously after the ``` npm run dev ``` command. We need to add the following tag in the vite.config.ts. You can skip this step, if so just copy and paste the url that appears in your terminal
+1. Create a folder for your project and change to it
+2. Install Vite ``` npm install vite @vitejs/plugin-react --save-dev ```
+3. Create a React with Typescript ``` npm create vite@latest my-vue-app -- --template react-ts ```
+4. Create package.json ``` npm install ``` to install the plugins mentioned in the package.json file
+5. I wanted to open the browser instantaneously after the ``` npm run dev ``` command. We need to add the following tag in the vite.config.ts. You can skip this step, if so just copy and paste the url that appears in your terminal
 
 ```
 
@@ -52,8 +52,8 @@ export default defineConfig({
 
 **Note :**  In a Vite project, index.html is front-and-central instead of being tucked away inside public. This is intentional: during development Vite is a server, and index.html is the entry point to your application.
 
-6- You cant check the tsconfig.json file, these are my options. You can change them in order to suit your preferences. The [official site](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html) has all the configuration options described.
-7- Install [Tailwind](https://tailwindcss.com/):
+6. You cant check the tsconfig.json file, these are my options. You can change them in order to suit your preferences. The [official site](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html) has all the configuration options described.
+7. Install [Tailwind](https://tailwindcss.com/):
 
 ```npm install -D tailwindcss postcss autoprefixer```
 ```npx tailwindcss init -p```
@@ -65,7 +65,7 @@ The tailwind.
 
 **Note :** After installing Tailwind the layout changes because the styles are broken because we cleared the default CSS in the index.css file to input the Tailwind directives.
 
-8- Install Jest for testing
+8. Install Jest for testing
 
 ``` npm install -D jest ```
 ``` npm install -D @testing-library/react @testing-library/jest-dom @testing-library/user-event ```
@@ -88,7 +88,7 @@ I added scripts for testing in the package.json file:
  ```
 
 
-9- By following [this article](https://www.robinwieruch.de/vite-eslint/) I installed Eslint for a React Vite app.
+9. By following [this article](https://www.robinwieruch.de/vite-eslint/) I installed Eslint for a React Vite app.
 I installed [Eslint for Typescript](https://typescript-eslint.io/getting-started) and for [CSS](https://www.npmjs.com/package/eslint-plugin-css) as well. I wanted a depth syntax control to avoid as much errors as possible.
 
 You can install and configure (very basically) eslint by running: ``` npm init @eslint/config ```
@@ -111,7 +111,7 @@ export default defineConfig({
 
  ```
 
-10- Create the eslint configuration file ``` touch .eslintrc ```. 
+10. Create the eslint configuration file ``` touch .eslintrc ```. 
 I complemented the configuration by following: [eslint configuration](https://medium.com/alturasoluciones/eslint-basic-configuration-18b2109d98ec)
 
 You can change the configuration running this command: ``` npm init @eslint/config ```
